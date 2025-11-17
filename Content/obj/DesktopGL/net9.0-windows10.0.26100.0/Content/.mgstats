@@ -1,0 +1,6 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/Ryan/Desktop/Project Files/Endless Runner/Content/Art Assets/Rock.png","C:/Users/Ryan/Desktop/Project Files/Endless Runner/Content/bin/DesktopGL/Content/Art Assets/Rock.xnb","TextureProcessor","Texture2DContent",26845,262229,0.0973644
+"C:/Users/Ryan/Desktop/Project Files/Endless Runner/Content/Art Assets/Runner.png","C:/Users/Ryan/Desktop/Project Files/Endless Runner/Content/bin/DesktopGL/Content/Art Assets/Runner.xnb","TextureProcessor","Texture2DContent",667823,12582997,0.2011244
+"C:/Users/Ryan/Desktop/Project Files/Endless Runner/Content/Art Assets/TestImage.png","C:/Users/Ryan/Desktop/Project Files/Endless Runner/Content/bin/DesktopGL/Content/Art Assets/TestImage.xnb","TextureProcessor","Texture2DContent",771,262229,0.0065669
+"C:/Users/Ryan/Desktop/Project Files/Endless Runner/Content/Sound Effect/parry_ShR1zj4.mp3","C:/Users/Ryan/Desktop/Project Files/Endless Runner/Content/bin/DesktopGL/Content/Sound Effect/Parry.xnb","SoundEffectProcessor","SoundEffectContent",16570,175209,0.1258862
+"C:/Users/Ryan/Desktop/Project Files/Endless Runner/Content/Title.spritefont","C:/Users/Ryan/Desktop/Project Files/Endless Runner/Content/bin/DesktopGL/Content/Title.xnb","FontDescriptionProcessor","SpriteFontContent",2068,70681,0.0562341

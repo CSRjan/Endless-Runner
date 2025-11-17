@@ -1,0 +1,51 @@
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\Content\Art Assets\BackgroundPlants.xnb
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\Content\Art Assets\BG.xnb
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\Content\Art Assets\Rock.xnb
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\Content\Art Assets\Runner.xnb
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\Content\Art Assets\SandDunes.xnb
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\Content\Art Assets\TestImage.xnb
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\Content\Font\Gameplay.xnb
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\Content\Font\Title.xnb
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\Content\Sound Effect\Parry.ogg
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\Content\Sound Effect\Parry.xnb
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\Content\Title.xnb
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\Endless Runner.exe
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\Endless Runner.deps.json
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\Endless Runner.runtimeconfig.json
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\Endless Runner.dll
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\Endless Runner.pdb
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\GumCommon.dll
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\GumDataTypesNet6.dll
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\FlatRedBall.InterpolationCore.dll
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\ToolsUtilitiesStandard.dll
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\MonoGameGum.dll
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\MonoGame.Framework.dll
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\NVorbis.dll
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\TextCopy.dll
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\runtimes\android-arm\native\libopenal.so
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\runtimes\android-arm64\native\libopenal.so
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\runtimes\android-x64\native\libopenal.so
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\runtimes\android-x86\native\libopenal.so
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\runtimes\ios-arm64\native\libopenal.dylib
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\runtimes\iossimulator-arm64\native\libopenal.dylib
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\runtimes\iossimulator-x64\native\libopenal.dylib
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\runtimes\linux-x64\native\libopenal.so
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\runtimes\osx\native\libopenal.dylib
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\runtimes\win-x64\native\openal.dll
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\runtimes\linux-x64\native\libSDL2-2.0.so.0
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\runtimes\osx\native\libSDL2-2.0.0.dylib
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\runtimes\win-x64\native\SDL2.dll
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\Game Library.dll
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Debug\net8.0\Game Library.pdb
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Debug\net8.0\Endless Runner.csproj.AssemblyReference.cache
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Debug\net8.0\Endless Runner.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Debug\net8.0\Endless Runner.AssemblyInfoInputs.cache
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Debug\net8.0\Endless Runner.AssemblyInfo.cs
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Debug\net8.0\Endless Runner.csproj.CoreCompileInputs.cache
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Debug\net8.0\Endless .7262B102.Up2Date
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Debug\net8.0\Endless Runner.dll
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Debug\net8.0\refint\Endless Runner.dll
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Debug\net8.0\Endless Runner.pdb
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Debug\net8.0\Endless Runner.genruntimeconfig.cache
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Debug\net8.0\ref\Endless Runner.dll

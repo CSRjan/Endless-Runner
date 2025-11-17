@@ -49,3 +49,4 @@ C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Debug\net8.0\refint\Endle
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Debug\net8.0\Endless Runner.pdb
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Debug\net8.0\Endless Runner.genruntimeconfig.cache
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Debug\net8.0\ref\Endless Runner.dll
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Debug\net8.0\Endless Runner.sourcelink.json

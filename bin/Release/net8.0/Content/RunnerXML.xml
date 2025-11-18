@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TextureAtlas>
+	<Texture>Art Assets/Runner</Texture>
+	<Regions>
+		<Region name="RunF1" x="0" y="0" width="512" height="512" />
+		<Region name="RunF2" x="512" y="0" width="512" height="512" />
+		<Region name="RunF3" x="1024" y="0" width="512" height="512" />
+		<Region name="RunF4" x="1536" y="0" width="512" height="512" />
+		<Region name="HurtF1" x="0" y="512" width="512" height="512" />
+		<Region name="HurtF2" x="512" y="512" width="512" height="512" />
+		<Region name="JumpF1" x="1024" y="512" width="512" height="512" />
+		<Region name="JumpF2" x="1536" y="512" width="512" height="512" />
+		<Region name="JumpF3" x="0" y="1024" width="512" height="512" />
+		<Region name="JumpF4" x="512" y="1024" width="512" height="512" />
+		<Region name="Parry" x="1024" y="1024" width="512" height="512" />
+	</Regions>
+	<Animations>
+		<Animation name="Run" delay="33.33" looping ="true">
+			<Frame region ="RunF1" frames = "3"/>
+			<Frame region ="RunF2" frames = "3"/>
+			<Frame region ="RunF3" frames = "3"/>
+			<Frame region ="RunF4" frames = "3"/>
+		</Animation>
+		<Animation name="JumpingUp" delay="33.33" looping ="false">
+			<Frame region ="JumpF1" frames = "1"/>
+			<Frame region ="JumpF2" frames = "3"/>
+		</Animation>
+		<Animation name="JumpingDown" delay="33.33" looping ="false">
+			<Frame region ="JumpF3" frames = "3"/>
+		</Animation>
+		<Animation name="CrouchJumpingDown" delay="33.33" looping ="false">
+			<Frame region ="JumpF4" frames = "2"/>
+		</Animation>
+		<Animation name ="Hurt" delay="33.33" looping ="true">
+			<Frame region ="HurtF1" frames = "3"/>
+			<Frame region ="HurtF2" frames = "3"/>
+			<Frame region ="HurtF1" frames = "3"/>
+		</Animation>
+		<Animation name ="Parry" delay="33.33" looping ="false">
+			<Frame region ="Parry" frames = "5"/>
+		</Animation>
+	</Animations>
+</TextureAtlas>

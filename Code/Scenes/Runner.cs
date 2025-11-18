@@ -26,7 +26,6 @@ namespace Endless_Runner.Code.Scenes
         //Game itself
         string SCORE_STRING = "";
         string HSSCOREKM_FORMAT = "High Score: {0}";
-        string SCOREKM_FORMAT = "Distance: {0}KM";
         string SCORE_FORMAT = "Score: {0}";
         string HEALTH_FORMAT = "Health: {0}";
         int score = 1;
@@ -211,10 +210,6 @@ namespace Endless_Runner.Code.Scenes
                 {
                     Core.ChangeScene(new Runner());
                 }
-            }
-            if (Core.Input.Keyboard.IsKeyDown(Keys.F12))
-            {
-                int i = 0;
             }
             if (Core.Input.Keyboard.IsKeyDown(Keys.Escape))
             {

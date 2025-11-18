@@ -15,15 +15,8 @@ C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\Endless Ru
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\Endless Runner.runtimeconfig.json
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\Endless Runner.dll
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\Endless Runner.pdb
-C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\GumCommon.dll
-C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\GumDataTypesNet6.dll
-C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\FlatRedBall.InterpolationCore.dll
-C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\ToolsUtilitiesStandard.dll
-C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\MonoGameGum.dll
-C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\MonoGame.Framework.dll
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\NVorbis.dll
-C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\TextCopy.dll
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\runtimes\android-arm\native\libopenal.so
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\runtimes\android-arm64\native\libopenal.so
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\runtimes\android-x64\native\libopenal.so

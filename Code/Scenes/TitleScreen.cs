@@ -5,7 +5,6 @@ using Game_Library.Scenes;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using MonoGameGum;
 namespace Endless_Runner.Code.Scenes
 {
     internal class TitleScreen :Scene
@@ -45,7 +44,6 @@ namespace Endless_Runner.Code.Scenes
         {
             CheckKeyboardInput();
             player.characterSprite.Update(gameTime);
-            GumService.Default.Update(gameTime);
             base.Update(gameTime);
         }
         public override void Draw(GameTime gameTime)
@@ -57,9 +55,6 @@ namespace Endless_Runner.Code.Scenes
 
         private void InitializeUI()
         {
-            // Clear out any previous UI in case we came here from
-            // a different screen:
-            GumService.Default.Root.Children.Clear();
             CreateTitlePanel();
         }
 

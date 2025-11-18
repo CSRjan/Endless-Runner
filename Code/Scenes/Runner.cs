@@ -5,7 +5,6 @@ using Game_Library.Scenes;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using MonoGameGum;
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -63,7 +62,6 @@ namespace Endless_Runner.Code.Scenes
 
         public override void Update(GameTime gameTime)
         {
-            GumService.Default.Update(gameTime);
             base.Update(gameTime);
             CheckKeyboardInput();
             if (titleScreen)

@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Ryan\\Desktop\\Project Files\\Endless Runner\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{17BD1692-09B8-4A00-BA10-9481F1D9C793}|Endless Runner.csproj|c:\\users\\ryan\\desktop\\project files\\endless runner\\code\\scenes\\titlescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17BD1692-09B8-4A00-BA10-9481F1D9C793}|Endless Runner.csproj|solutionrelative:code\\scenes\\titlescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17BD1692-09B8-4A00-BA10-9481F1D9C793}|Endless Runner.csproj|c:\\users\\ryan\\desktop\\project files\\endless runner\\code\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17BD1692-09B8-4A00-BA10-9481F1D9C793}|Endless Runner.csproj|solutionrelative:code\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17BD1692-09B8-4A00-BA10-9481F1D9C793}|Endless Runner.csproj|c:\\users\\ryan\\desktop\\project files\\endless runner\\endless runner.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{17BD1692-09B8-4A00-BA10-9481F1D9C793}|Endless Runner.csproj|solutionrelative:endless runner.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{17BD1692-09B8-4A00-BA10-9481F1D9C793}|Endless Runner.csproj|c:\\users\\ryan\\desktop\\project files\\endless runner\\code\\scenes\\runner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17BD1692-09B8-4A00-BA10-9481F1D9C793}|Endless Runner.csproj|solutionrelative:code\\scenes\\runner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17BD1692-09B8-4A00-BA10-9481F1D9C793}|Endless Runner.csproj|c:\\users\\ryan\\desktop\\project files\\endless runner\\endless runner.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{17BD1692-09B8-4A00-BA10-9481F1D9C793}|Endless Runner.csproj|solutionrelative:endless runner.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{17BD1692-09B8-4A00-BA10-9481F1D9C793}|Endless Runner.csproj|c:\\users\\ryan\\desktop\\project files\\endless runner\\code\\scenes\\titlescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17BD1692-09B8-4A00-BA10-9481F1D9C793}|Endless Runner.csproj|solutionrelative:code\\scenes\\titlescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17BD1692-09B8-4A00-BA10-9481F1D9C793}|Endless Runner.csproj|c:\\users\\ryan\\desktop\\project files\\endless runner\\code\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17BD1692-09B8-4A00-BA10-9481F1D9C793}|Endless Runner.csproj|solutionrelative:code\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{17BD1692-09B8-4A00-BA10-9481F1D9C793}|Endless Runner.csproj|c:\\users\\ryan\\desktop\\project files\\endless runner\\code\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -53,11 +53,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "TitleScreen.cs",
               "DocumentMoniker": "C:\\Users\\Ryan\\Desktop\\Project Files\\Endless Runner\\Code\\Scenes\\TitleScreen.cs",
               "RelativeDocumentMoniker": "Code\\Scenes\\TitleScreen.cs",
@@ -70,26 +70,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Endless Runner.csproj",
               "DocumentMoniker": "C:\\Users\\Ryan\\Desktop\\Project Files\\Endless Runner\\Endless Runner.csproj",
               "RelativeDocumentMoniker": "Endless Runner.csproj",
               "ToolTip": "C:\\Users\\Ryan\\Desktop\\Project Files\\Endless Runner\\Endless Runner.csproj",
               "RelativeToolTip": "Endless Runner.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-11-18T02:02:18.192Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Runner.cs",
               "DocumentMoniker": "C:\\Users\\Ryan\\Desktop\\Project Files\\Endless Runner\\Code\\Scenes\\Runner.cs",
               "RelativeDocumentMoniker": "Code\\Scenes\\Runner.cs",
               "ToolTip": "C:\\Users\\Ryan\\Desktop\\Project Files\\Endless Runner\\Code\\Scenes\\Runner.cs",
               "RelativeToolTip": "Code\\Scenes\\Runner.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAQwD8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAD8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-27T02:02:58.833Z",
               "EditorCaption": ""
@@ -109,7 +109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Game1.cs",
               "DocumentMoniker": "C:\\Users\\Ryan\\Desktop\\Project Files\\Endless Runner\\Code\\Game1.cs",
               "RelativeDocumentMoniker": "Code\\Game1.cs",

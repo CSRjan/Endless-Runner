@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/Ryan/Desktop/Project Files/Endless Runner/Content/Art Assets/BackgroundPlants.png</File>
+    <File>C:/Users/Ryan/Desktop/Project Files/Endless Runner/Content/Art Assets/BG.png</File>
+    <File>C:/Users/Ryan/Desktop/Project Files/Endless Runner/Content/Art Assets/Rock.png</File>
+    <File>C:/Users/Ryan/Desktop/Project Files/Endless Runner/Content/Art Assets/Runner.png</File>
+    <File>C:/Users/Ryan/Desktop/Project Files/Endless Runner/Content/Art Assets/SandDunes.png</File>
+    <File>C:/Users/Ryan/Desktop/Project Files/Endless Runner/Content/Art Assets/TestImage.png</File>
+    <File>C:/Users/Ryan/Desktop/Project Files/Endless Runner/Content/Font/Gameplay.spritefont</File>
+    <File>C:/Users/Ryan/Desktop/Project Files/Endless Runner/Content/Font/Title.spritefont</File>
+    <File>C:/Users/Ryan/Desktop/Project Files/Endless Runner/Content/Sound Effect/parry_ShR1zj4.mp3</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File>Sound Effect/Parry.mp3</File>
+  </DestFiles>
+</SourceFileCollection>

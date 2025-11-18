@@ -17,8 +17,8 @@
     <None Remove="bin\Release\**" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.*" />
     <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.*" />
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.4.1" />
     <PackageReference Include="MonoGame.Library.OpenAL" Version="1.24.3.2" />
     <PackageReference Include="MonoGame.Library.SDL" Version="2.32.2.1" />
   </ItemGroup>

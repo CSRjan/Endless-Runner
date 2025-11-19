@@ -6,20 +6,22 @@
 		<Region name="RunF2" x="512" y="0" width="512" height="512" />
 		<Region name="RunF3" x="1024" y="0" width="512" height="512" />
 		<Region name="RunF4" x="1536" y="0" width="512" height="512" />
-		<Region name="HurtF1" x="2560" y="0" width="512" height="512" />
+		<Region name="HurtF1" x="2048" y="0" width="512" height="512" />
 		<Region name="HurtF2" x="0" y="512" width="512" height="512" />
 		<Region name="JumpF2" x="512" y="512" width="512" height="512" />
 		<Region name="JumpF3" x="1024" y="512" width="512" height="512" />
 		<Region name="JumpF4" x="1536" y="512" width="512" height="512" />
-		<Region name="HRunF1" x="2560" y="512" width="512" height="512" />
+		<Region name="HRunF1" x="2048" y="512" width="512" height="512" />
 		<Region name="HRunF2" x="0" y="1024" width="512" height="512" />
 		<Region name="HRunF3" x="512" y="1024" width="512" height="512" />
 		<Region name="HRunF4" x="1024" y="1024" width="512" height="512" />
 		<Region name="HHurtF1" x="1536" y="1024" width="512" height="512" />
-		<Region name="HHurtF2" x="2560" y="1024" width="512" height="512" />
-		<Region name="HJumpF2" x="0" y="1536" width="512" height="512" />
-		<Region name="HJumpF3" x="512" y="1536" width="512" height="512" />
-		<Region name="HJumpF4" x="1024" y="1024" width="512" height="512" />
+		<Region name="HHurtF2" x="2048" y="1024" width="512" height="512" />
+		<Region name="HRHurtF1" x="0" y="1536" width="512" height="512" />
+		<Region name="HRHurtF2" x="512" y="1536" width="512" height="512" />
+		<Region name="HJumpF2" x="1024" y="1536" width="512" height="512" />
+		<Region name="HJumpF3" x="1536" y="1536" width="512" height="512" />
+		<Region name="HJumpF4" x="2048" y="1536" width="512" height="512" />
 	</Regions>
 	<Animations>
 		<Animation name="Run" delay="33.33" looping ="true">
@@ -61,6 +63,11 @@
 			<Frame region ="HHurtF1" frames = "3"/>
 			<Frame region ="HHurtF2" frames = "3"/>
 			<Frame region ="HHurtF1" frames = "3"/>
+		</Animation>
+		<Animation name ="HRHurt" delay="33.33" looping ="true">
+			<Frame region ="HRHurtF1" frames = "3"/>
+			<Frame region ="HRHurtF2" frames = "3"/>
+			<Frame region ="HRHurtF1" frames = "3"/>
 		</Animation>
 	</Animations>
 </TextureAtlas>

@@ -46,8 +46,8 @@ namespace Endless_Runner.Code.Scenes
         bool gamePaused = true;
         bool titleScreen = true;
         float bufferOffering = 1.5f;
-        Rectangle ground = new Rectangle(0, 1080, 500, 10);
-        List<string> animations = new List<string>() { "Run", "CrouchJumpingUp", "JumpingUp", "JumpingDown", "CrouchJumpingDown", "Hurt", "Parry"};
+        Rectangle ground = new Rectangle(0, 1080, 1920, 10);
+        List<string> animations = new List<string>() { "Run", "CrouchJumpingUp", "JumpingUp", "JumpingDown", "CrouchJumpingDown", "Hurt", "HRHurt"};
         public override void Initialize()
         {
             initializeGame();
@@ -101,6 +101,7 @@ namespace Endless_Runner.Code.Scenes
                         {
                             player.position.Y = ground.Top - 512;
                         }
+                        
                         if (!gamePaused)
                         {
                             score += scoreIncrement;
@@ -124,6 +125,21 @@ namespace Endless_Runner.Code.Scenes
                                 highScore = finalScore;
                                 hsScoreText.format(HSSCOREKM_FORMAT, highScore);
                             }
+                        }
+                        switch(player.position.X)
+                        {
+                            case < 352:
+                                exScore += 1;
+                                break;
+                            case < 704:
+                                exScore += 2;
+                                break;
+                            case < 1056:
+                                exScore += 4;
+                                break;
+                            case < 1408:
+                                exScore += 6;
+                                break;
                         }
                         player.gamePaused = gamePaused;
                         obstacleManager.gamePaused = gamePaused;
@@ -177,6 +193,16 @@ namespace Endless_Runner.Code.Scenes
                         player.speedUpActivated = false;
                     }
                         break;
+                case "Freemove":
+                    if (Core.Input.Keyboard.WasKeyJustPressed(Keys.P) && !player.FreeMoveActivated)
+                    {
+                        player.FreeMoveActivated = true;
+                    }
+                    else if (Core.Input.Keyboard.WasKeyJustPressed(Keys.P) && player.FreeMoveActivated)
+                    {
+                        player.FreeMoveActivated = false;
+                    }
+                    break;
             }
             if (Core.Input.Keyboard.WasKeyJustPressed(Keys.Enter) && !transition && titleScreen)
             {
@@ -185,6 +211,7 @@ namespace Endless_Runner.Code.Scenes
             if (Core.Input.Keyboard.IsKeyDown(Keys.F12))
             {
                 int i = 0;
+                i++;
             }
             if (bufferOffering <= 0 && obstacleManager.offering)
             {

@@ -17,7 +17,7 @@ namespace Endless_Runner.Code
         int omc = 1;
         int obstacleMax;
         public bool offering;
-        public float speed = 13;
+        public float speed = 15;
         public bool gamePaused = false;
         List<string> cloudRegionNames = new List<string> {"Cloud1", "Cloud2" , "Cloud3" , "Cloud4" , "Cloud5" , "Cloud6" };
         public ObstacleManager(TextureAtlas rT)

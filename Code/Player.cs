@@ -21,7 +21,7 @@ namespace Endless_Runner.Code
         public Vector2 velocity = Vector2.Zero;
         public float terminalVelocityUpwards = 47;
         public float terminalVelocity = 30;
-        public int health = 2;
+        public int health = 1;
         public int maxHealth = 2;
         public bool dead;
         public bool invul = false;
@@ -32,8 +32,11 @@ namespace Endless_Runner.Code
         public bool hasResurrection = false;
         public bool hasSpeedUp = true;
         public bool speedUpActivated = false;
+        public bool hasFreeMove = true;
+        public bool FreeMoveActivated = false;
+        public float horiSpeed = 3;
         public SpriteFontText offerText;
-        public string currentOffer = "Speed-Up";
+        public string currentOffer = "None";
         string newOffer;
         string description;
         float jumpBufferTimer = .50f;
@@ -58,7 +61,8 @@ namespace Endless_Runner.Code
             if (!gamePaused)
             {
                 Jump();
-                if(health < 2)
+                freeMove();
+                if (health < 2)
                 {
                     animManager("H");
                 }
@@ -66,7 +70,7 @@ namespace Endless_Runner.Code
                 {
                     animManager(String.Empty);
                 }
-                    position.X += velocity.X;
+                position.X += velocity.X;
                 position.Y -= velocity.Y;
                 velocity.Y = clamp(velocity.Y, -terminalVelocity, terminalVelocityUpwards);
                 collider.X = (int)position.X + (int)offset.X;
@@ -77,6 +81,7 @@ namespace Endless_Runner.Code
                     {
                         if(currentOffer == "Resurrection")
                         {
+                            state = 6;
                             health = maxHealth;
                             hasResurrection = false;
                             currentOffer = "None";
@@ -177,15 +182,15 @@ namespace Endless_Runner.Code
                     ChangeAnimation(s + animationNames[5]);
                     if (!invul)
                     {
-                        if(velocity.Y > 0)
+                        if (velocity.Y > 0)
                         {
                             state = 2;
                         }
-                        else if(velocity.Y < 0)
+                        else if (velocity.Y < 0)
                         {
                             state = 3;
                         }
-                        else if(velocity.Y == 0)
+                        else if (velocity.Y == 0)
                         {
                             state = 0;
                         }
@@ -193,9 +198,20 @@ namespace Endless_Runner.Code
                     break;
                 case 6:
                     ChangeAnimation(s + animationNames[6]);
-                    if (characterSprite.Animation.finished)
+                    if (!invul)
                     {
-                        state = 0;
+                        if (velocity.Y > 0)
+                        {
+                            state = 2;
+                        }
+                        else if (velocity.Y < 0)
+                        {
+                            state = 3;
+                        }
+                        else if (velocity.Y == 0)
+                        {
+                            state = 0;
+                        }
                     }
                     break;
             }
@@ -303,6 +319,50 @@ namespace Endless_Runner.Code
                 else
                 {
                     velocity.Y -= downwardsSpeed;
+                }
+            }
+        }
+
+        void freeMove()
+        {
+            if (FreeMoveActivated)
+            {
+                if (Core.Input.Keyboard.IsKeyDown(Keys.A) && !invul)
+                {
+                    if (position.X > 0)
+                    {
+                        velocity.X = -horiSpeed;
+                    }
+                    else
+                    {
+                        velocity.X = 0;
+                    }
+                }
+                else if (Core.Input.Keyboard.IsKeyDown(Keys.D) && !invul)
+                {
+                    if (position.X < 1408)
+                    {
+                        velocity.X = horiSpeed;
+                    }
+                    else
+                    {
+                        velocity.X = 0;
+                    }
+                }
+                else
+                {
+                    velocity.X = 0;
+                }
+            }
+            else
+            {
+                if (position.X > 0)
+                {
+                    velocity.X = -horiSpeed;
+                }
+                else
+                {
+                    velocity.X = 0;
                 }
             }
         }

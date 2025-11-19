@@ -43,14 +43,6 @@ namespace Endless_Runner.Code
         public List<string> animationNames;
         int state;
         float downwardsSpeed = 2;
-        public Player(TextureAtlas atlas, Vector2 Position, Vector2 colliderSize, Vector2 colliderOffset, string animation)
-        {
-            position = Position;
-            _atlas = atlas;
-            characterSprite = _atlas.CreateAnimatedSprite(animation);
-            collider = new Rectangle(new Point((int)position.X + (int)colliderOffset.X, (int)position.Y + (int)colliderOffset.Y), new Point((int)colliderSize.X, (int)colliderSize.Y));
-            velocity = Vector2.Zero;
-        }
         public Player(TextureAtlas atlas, Vector2 Position, Vector2 colliderSize, Vector2 colliderOffset, string animation, List<string> anim) 
         {
             position = Position;
@@ -66,8 +58,15 @@ namespace Endless_Runner.Code
             if (!gamePaused)
             {
                 Jump();
-                animManager();
-                position.X += velocity.X;
+                if(health < 2)
+                {
+                    animManager("H");
+                }
+                else
+                {
+                    animManager(String.Empty);
+                }
+                    position.X += velocity.X;
                 position.Y -= velocity.Y;
                 velocity.Y = clamp(velocity.Y, -terminalVelocity, terminalVelocityUpwards);
                 collider.X = (int)position.X + (int)offset.X;
@@ -130,19 +129,19 @@ namespace Endless_Runner.Code
             }
         }
 
-        void animManager()
+        void animManager(string s)
         {
             switch (state)
             {
                 case 0:
-                    ChangeAnimation(animationNames[0]);
+                    ChangeAnimation(s + animationNames[0]);
                     if (invul)
                     {
                         state = 5;
                     }
                     break;
                 case 2:
-                    ChangeAnimation(animationNames[2]);
+                    ChangeAnimation(s + animationNames[2]);
                     if (velocity.Y < 0)
                     {
                         state++;
@@ -153,7 +152,7 @@ namespace Endless_Runner.Code
                     }
                     break;
                 case 3:
-                    ChangeAnimation(animationNames[3]);
+                    ChangeAnimation(s + animationNames[3]);
                     if (onGround)
                     {
                         state = 4;
@@ -164,7 +163,7 @@ namespace Endless_Runner.Code
                     }
                     break;
                 case 4:
-                    ChangeAnimation(animationNames[4]);
+                    ChangeAnimation(s + animationNames[4]);
                     if (characterSprite._animation.finished)
                     {
                         state = 0;
@@ -175,7 +174,7 @@ namespace Endless_Runner.Code
                     }
                     break;
                 case 5:
-                    ChangeAnimation(animationNames[5]);
+                    ChangeAnimation(s + animationNames[5]);
                     if (!invul)
                     {
                         if(velocity.Y > 0)
@@ -193,7 +192,7 @@ namespace Endless_Runner.Code
                     }
                     break;
                 case 6:
-                    ChangeAnimation(animationNames[6]);
+                    ChangeAnimation(s + animationNames[6]);
                     if (characterSprite.Animation.finished)
                     {
                         state = 0;

@@ -127,8 +127,8 @@ namespace Endless_Runner.Code.Scenes
                         }
                         player.gamePaused = gamePaused;
                         obstacleManager.gamePaused = gamePaused;
-                        player.characterSprite.Update(gameTime);
                         player.Update();
+                        player.characterSprite.Update(gameTime);
                         obstacleManager.Update();
                     }
                 }
@@ -181,6 +181,10 @@ namespace Endless_Runner.Code.Scenes
             if (Core.Input.Keyboard.WasKeyJustPressed(Keys.Enter) && !transition && titleScreen)
             {
                 transition = true;
+            }
+            if (Core.Input.Keyboard.IsKeyDown(Keys.F12))
+            {
+                int i = 0;
             }
             if (bufferOffering <= 0 && obstacleManager.offering)
             {

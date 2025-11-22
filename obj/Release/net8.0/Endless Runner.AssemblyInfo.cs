@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Endless Runner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45a34d361356a3e6fdf29b433671e99a6cedd100")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b699258fc901f8963b628879ed307a56836fe34f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Endless Runner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Endless Runner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

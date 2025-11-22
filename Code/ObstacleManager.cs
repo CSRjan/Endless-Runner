@@ -10,26 +10,30 @@ namespace Endless_Runner.Code
         List<Obstacle> allObstacles = new List<Obstacle>();
         TextureAtlas rock;
         TextureAtlas bgPiece;
-        List<Cloud> clouds = new List<Cloud>();
+        List<Plant> plants = new List<Plant>();
         int i = 0;
+        int iC = 0;
         public int currentState;
         float randomizerTimer;
+        float cloudRandomizerTimer;
         int omc = 1;
         int obstacleMax;
+        float terminalVelocity = 35;
         public bool offering;
         public float speed = 15;
         public bool gamePaused = false;
-        List<string> cloudRegionNames = new List<string> {"Cloud1", "Cloud2" , "Cloud3" , "Cloud4" , "Cloud5" , "Cloud6" };
         public ObstacleManager(TextureAtlas rT)
         {
             rock = rT;
             randomizerTimer = Core.Randomizer.Next(2000, 4000)/1000;
+            cloudRandomizerTimer = Core.Randomizer.Next(1000, 11000) / 1000;
             bgPiece = TextureAtlas.FromFile(Core.Content, "BGElement.xml");
-            clouds.Add(new Cloud(bgPiece,new Vector2(Core.Randomizer.Next(2000,5000), Core.Randomizer.Next(50, 128)), cloudRegionNames[Core.Randomizer.Next(0,5)]));
-            clouds.Add(new Cloud(bgPiece, new Vector2(Core.Randomizer.Next(2000, 5000), Core.Randomizer.Next(50, 128)), cloudRegionNames[Core.Randomizer.Next(0, 5)]));
-            clouds.Add(new Cloud(bgPiece, new Vector2(Core.Randomizer.Next(2000, 5000), Core.Randomizer.Next(50, 128)), cloudRegionNames[Core.Randomizer.Next(0, 5)]));
-            clouds.Add(new Cloud(bgPiece, new Vector2(Core.Randomizer.Next(2000, 5000), Core.Randomizer.Next(50, 128)), cloudRegionNames[Core.Randomizer.Next(0, 5)]));
-            clouds.Add(new Cloud(bgPiece, new Vector2(Core.Randomizer.Next(2000, 5000), Core.Randomizer.Next(50, 128)), cloudRegionNames[Core.Randomizer.Next(0, 5)]));
+            plants.Add(new Plant(bgPiece,new Vector2(2000, 1080-256), "Plant" + Core.Randomizer.Next(1,12)));
+            plants.Add(new Plant(bgPiece, new Vector2(2000, 1080 - 256), "Plant" + Core.Randomizer.Next(1, 12)));
+            plants.Add(new Plant(bgPiece, new Vector2(2000, 1080 - 256), "Plant" + Core.Randomizer.Next(1, 12)));
+            plants.Add(new Plant(bgPiece, new Vector2(2000, 1080 - 256), "Plant" + Core.Randomizer.Next(1, 12)));
+            plants.Add(new Plant(bgPiece, new Vector2(2000, 1080 - 256), "Plant" + Core.Randomizer.Next(1, 12)));
+            plants.Add(new Plant(bgPiece, new Vector2(2000, 1080 - 256), "Plant" + Core.Randomizer.Next(1, 12)));
         }
 
         public void instatiateObstacle(Obstacle o)
@@ -62,6 +66,25 @@ namespace Endless_Runner.Code
                 {
                     randomizerTimer -= Core.Deltatime;
                 }
+                if (cloudRandomizerTimer <= 0)
+                {
+                    int ix = Core.Randomizer.Next(1, 12);
+                    iC = Core.Randomizer.Next(0, 5);
+                    while (!plants[iC].resetting)
+                    {
+                        iC = Core.Randomizer.Next(0, 5);
+                    }
+                    if (randomizerTimer > .9f)
+                    {
+                        plants[iC].resetting = false;
+                        plants[iC].characterSprite.Region = bgPiece.GetRegion("Plant" + ix);
+                        cloudRandomizerTimer = Core.Randomizer.Next(1500, 4000) / 1000;
+                    }
+                }
+                else
+                {
+                    cloudRandomizerTimer -= Core.Deltatime;
+                }
                 foreach (Obstacle o in allObstacles)
                 {
                     o.Update();
@@ -75,6 +98,20 @@ namespace Endless_Runner.Code
                         o.resetting = true;
                     }
                 }
+                foreach (Plant o in plants)
+                {
+                    o.Update();
+                    if (o.position.X > o.endBound)
+                    {
+                        o.velocity = (Vector2.UnitX * -speed);
+                    }
+                    else
+                    {
+                        o.position.X = 2000;
+                        o.resetting = true;
+                    }
+                }
+                speed = clamp(speed, 0, terminalVelocity);
             }
         }
 
@@ -92,11 +129,11 @@ namespace Endless_Runner.Code
 
         public void DrawLoop()
         {
-            foreach (Obstacle obstacle in allObstacles)
+            foreach (Plant obstacle in plants)
             {
                 obstacle.characterSprite.Draw(Core.SpriteBatch, obstacle.position);
             }
-            foreach (Cloud obstacle in clouds)
+            foreach (Obstacle obstacle in allObstacles)
             {
                 obstacle.characterSprite.Draw(Core.SpriteBatch, obstacle.position);
             }
@@ -115,8 +152,24 @@ namespace Endless_Runner.Code
                 break;
                 case 10:
                     speed++;
+                    offering = true;
                     currentState = 0;
-                break;
+                    break;
+            }
+        }
+        float clamp(float input, float min, float max)
+        {
+            if (input < min)
+            {
+                return min;
+            }
+            else if (input > max)
+            {
+                return max;
+            }
+            else
+            {
+                return input;
             }
         }
     }

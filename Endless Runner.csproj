@@ -17,6 +17,10 @@
     <None Remove="bin\Release\**" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Release\net8.0\Content\Soul.xml" />
+    <Content Include="bin\Release\net8.0\win-x64\publish\Content\Soul.xml" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.*" />
     <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.4.1" />
     <PackageReference Include="MonoGame.Library.OpenAL" Version="1.24.3.2" />
@@ -27,7 +31,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\" />
-    <Folder Include="bin\" />
   </ItemGroup>
   <Target Name="RestoreDotnetTools" BeforeTargets="CollectPackageReferences">
     <Message Text="Restoring dotnet tools (this might take a while depending on your internet speed and should only happen upon building your project for the first time, or after upgrading MonoGame, or clearing your nuget cache)" Importance="High" />

@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Ryan\\Desktop\\Project Files\\Endless Runner\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{17BD1692-09B8-4A00-BA10-9481F1D9C793}|Endless Runner.csproj|c:\\users\\ryan\\desktop\\project files\\endless runner\\code\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17BD1692-09B8-4A00-BA10-9481F1D9C793}|Endless Runner.csproj|solutionrelative:code\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17BD1692-09B8-4A00-BA10-9481F1D9C793}|Endless Runner.csproj|c:\\users\\ryan\\desktop\\project files\\endless runner\\code\\scenes\\runner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17BD1692-09B8-4A00-BA10-9481F1D9C793}|Endless Runner.csproj|solutionrelative:code\\scenes\\runner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{17BD1692-09B8-4A00-BA10-9481F1D9C793}|Endless Runner.csproj|c:\\users\\ryan\\desktop\\project files\\endless runner\\code\\obstaclemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17BD1692-09B8-4A00-BA10-9481F1D9C793}|Endless Runner.csproj|solutionrelative:code\\obstaclemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17BD1692-09B8-4A00-BA10-9481F1D9C793}|Endless Runner.csproj|c:\\users\\ryan\\desktop\\project files\\endless runner\\code\\plant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17BD1692-09B8-4A00-BA10-9481F1D9C793}|Endless Runner.csproj|solutionrelative:code\\plant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17BD1692-09B8-4A00-BA10-9481F1D9C793}|Endless Runner.csproj|c:\\users\\ryan\\desktop\\project files\\endless runner\\code\\obstacle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17BD1692-09B8-4A00-BA10-9481F1D9C793}|Endless Runner.csproj|solutionrelative:code\\obstacle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17BD1692-09B8-4A00-BA10-9481F1D9C793}|Endless Runner.csproj|c:\\users\\ryan\\desktop\\project files\\endless runner\\bin\\release\\net8.0\\content\\bgelement.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{17BD1692-09B8-4A00-BA10-9481F1D9C793}|Endless Runner.csproj|solutionrelative:bin\\release\\net8.0\\content\\bgelement.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B20DCACA-E615-53BB-F2BE-45F10A596E7D}|..\\Game Library\\Project1\\Game Library.csproj|c:\\users\\ryan\\desktop\\project files\\game library\\project1\\graphics\\animatedsprites.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -29,61 +33,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BGElement.xml",
+              "DocumentMoniker": "C:\\Users\\Ryan\\Desktop\\Project Files\\Endless Runner\\bin\\Release\\net8.0\\Content\\BGElement.xml",
+              "RelativeDocumentMoniker": "bin\\Release\\net8.0\\Content\\BGElement.xml",
+              "ToolTip": "C:\\Users\\Ryan\\Desktop\\Project Files\\Endless Runner\\bin\\Release\\net8.0\\Content\\BGElement.xml",
+              "RelativeToolTip": "bin\\Release\\net8.0\\Content\\BGElement.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-11-22T02:17:37.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\Ryan\\Desktop\\Project Files\\Endless Runner\\Code\\Player.cs",
-              "RelativeDocumentMoniker": "Code\\Player.cs",
-              "ToolTip": "C:\\Users\\Ryan\\Desktop\\Project Files\\Endless Runner\\Code\\Player.cs",
-              "RelativeToolTip": "Code\\Player.cs",
-              "ViewState": "AgIAALIAAAAAAAAAAAAuwMcAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T00:46:39.478Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Runner.cs",
-              "DocumentMoniker": "C:\\Users\\Ryan\\Desktop\\Project Files\\Endless Runner\\Code\\Scenes\\Runner.cs",
-              "RelativeDocumentMoniker": "Code\\Scenes\\Runner.cs",
-              "ToolTip": "C:\\Users\\Ryan\\Desktop\\Project Files\\Endless Runner\\Code\\Scenes\\Runner.cs",
-              "RelativeToolTip": "Code\\Scenes\\Runner.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAgwDEAAACRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-27T02:02:58.833Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "ObstacleManager.cs",
               "DocumentMoniker": "C:\\Users\\Ryan\\Desktop\\Project Files\\Endless Runner\\Code\\ObstacleManager.cs",
               "RelativeDocumentMoniker": "Code\\ObstacleManager.cs",
               "ToolTip": "C:\\Users\\Ryan\\Desktop\\Project Files\\Endless Runner\\Code\\ObstacleManager.cs",
               "RelativeToolTip": "Code\\ObstacleManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAuwEgAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T04:01:20.544Z"
+              "WhenOpened": "2025-09-17T04:01:20.544Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "Plant.cs",
+              "DocumentMoniker": "C:\\Users\\Ryan\\Desktop\\Project Files\\Endless Runner\\Code\\Plant.cs",
+              "RelativeDocumentMoniker": "Code\\Plant.cs",
+              "ToolTip": "C:\\Users\\Ryan\\Desktop\\Project Files\\Endless Runner\\Code\\Plant.cs",
+              "RelativeToolTip": "Code\\Plant.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAC0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T01:08:22.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Obstacle.cs",
+              "DocumentMoniker": "C:\\Users\\Ryan\\Desktop\\Project Files\\Endless Runner\\Code\\Obstacle.cs",
+              "RelativeDocumentMoniker": "Code\\Obstacle.cs",
+              "ToolTip": "C:\\Users\\Ryan\\Desktop\\Project Files\\Endless Runner\\Code\\Obstacle.cs",
+              "RelativeToolTip": "Code\\Obstacle.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowC8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T15:36:16.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "AnimatedSprites.cs",
               "DocumentMoniker": "C:\\Users\\Ryan\\Desktop\\Project Files\\Game Library\\Project1\\Graphics\\AnimatedSprites.cs",
               "RelativeDocumentMoniker": "..\\Game Library\\Project1\\Graphics\\AnimatedSprites.cs",
               "ToolTip": "C:\\Users\\Ryan\\Desktop\\Project Files\\Game Library\\Project1\\Graphics\\AnimatedSprites.cs",
               "RelativeToolTip": "..\\Game Library\\Project1\\Graphics\\AnimatedSprites.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAArwDwAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAD4vzwAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T18:49:20.401Z"
+              "WhenOpened": "2025-11-19T18:49:20.401Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Game1.cs",
               "DocumentMoniker": "C:\\Users\\Ryan\\Desktop\\Project Files\\Endless Runner\\Code\\Game1.cs",
               "RelativeDocumentMoniker": "Code\\Game1.cs",

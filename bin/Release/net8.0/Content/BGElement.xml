@@ -2,12 +2,18 @@
 <TextureAtlas>
 	<Texture>Art Assets/BackgroundPlants</Texture>
 	<Regions>
-		<Region name="Cloud1" x="0" y="0" width="256" height="128" />
-		<Region name="Cloud2" x="256" y="0" width="256" height="128" />
-		<Region name="Cloud3" x="512" y="0" width="256" height="128" />
-		<Region name="Cloud4" x="0" y="128" width="256" height="128" />
-		<Region name="Cloud5" x="256" y="128" width="256" height="128" />
-		<Region name="Cloud6" x="512" y="128" width="256" height="128" />
+		<Region name="Plant1" x="0" y="0" width="256" height="256" />
+		<Region name="Plant2" x="256" y="0" width="256" height="256" />
+		<Region name="Plant3" x="512" y="0" width="256" height="256" />
+		<Region name="Plant4" x="1024" y="0" width="256" height="256" />
+		<Region name="Plant5" x="0" y="256" width="256" height="256" />
+		<Region name="Plant6" x="256" y="256" width="256" height="256" />
+		<Region name="Plant7" x="512" y="256" width="256" height="256" />
+		<Region name="Plant8" x="1024" y="256" width="256" height="256" />
+		<Region name="Plant9" x="0" y="512" width="256" height="256" />
+		<Region name="Plant10" x="256" y="512" width="256" height="256" />
+		<Region name="Plant11" x="512" y="512" width="256" height="256" />
+		<Region name="Plant12" x="1024" y="512" width="256" height="256" />
 	</Regions>
 	<Animations>
 	</Animations>

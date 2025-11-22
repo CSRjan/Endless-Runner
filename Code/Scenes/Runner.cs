@@ -7,6 +7,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Threading;
 
 namespace Endless_Runner.Code.Scenes
@@ -14,11 +15,11 @@ namespace Endless_Runner.Code.Scenes
     public class Runner : Scene
     {
         //Title
-        string TITLE_STRING = "Runner Demo";
+        string TITLE_STRING = "Endless Dolichos";
         SpriteFont titleFont;
         SpriteFontText titleText;
         Vector2 titleTextPosition;
-        string INPUT_STRING = "Press Enter to Start";
+        string INPUT_STRING = "Press Space to Start";
         SpriteFontText inputText;
         Vector2 inputTextPosition;
         bool transition;
@@ -80,6 +81,32 @@ namespace Endless_Runner.Code.Scenes
                         titleScreen = false;
                     }
                 }
+                if (Core.Input.GamePads[0].IsConnected)
+                {
+                    inputText.textValue = "Press A to Start.";
+                    if (obstacleManager.offering)
+                    {
+                        player.description += "\nPress A to accept The Blessing\nPress B to Deny The Blessing";
+                    }
+                    if (SaveManager.instance.sd.offeringForFirstTime)
+                    {
+                        player.description += "\nIf you accept, your powers with the exception of resurrection, are activated with B.";
+                        SaveManager.instance.sd.offeringForFirstTime = false;
+                    }
+                }
+                else
+                {
+                    inputText.textValue = "Press Space to Start.";
+                    if (obstacleManager.offering)
+                    {
+                        player.description += "Press Space to accept The Blessing\nPress P to Deny The Blessing";
+                    }
+                    if (SaveManager.instance.sd.offeringForFirstTime)
+                    {
+                        player.description += "\nIf you accept, your powers with the exception of resurrection, are activated with P.";
+                        SaveManager.instance.sd.offeringForFirstTime = false;
+                    }
+                }
             }
             else
             {
@@ -104,7 +131,8 @@ namespace Endless_Runner.Code.Scenes
                         
                         if (!gamePaused)
                         {
-                            score += scoreIncrement;
+                            score++;
+                            exScore += scoreIncrement;
                             finalScore = score + exScore;
                             scoreText.format(SCORE_FORMAT, finalScore);
                             healthText.format(HEALTH_FORMAT, player.health);
@@ -129,23 +157,24 @@ namespace Endless_Runner.Code.Scenes
                         switch(player.position.X)
                         {
                             case < 352:
-                                exScore += 1;
+                                scoreIncrement = 0;
                                 break;
                             case < 704:
-                                exScore += 2;
+                                scoreIncrement = 2;
                                 break;
                             case < 1056:
-                                exScore += 4;
+                                scoreIncrement = 4;
                                 break;
                             case < 1408:
-                                exScore += 6;
+                                scoreIncrement = 6;
                                 break;
                         }
-                        player.gamePaused = gamePaused;
-                        obstacleManager.gamePaused = gamePaused;
                         player.Update();
                         player.characterSprite.Update(gameTime);
+                        player.soulSprite.Update(gameTime);
                         obstacleManager.Update();
+                        player.gamePaused = gamePaused;
+                        obstacleManager.gamePaused = gamePaused;
                     }
                 }
             }
@@ -158,6 +187,7 @@ namespace Endless_Runner.Code.Scenes
                 titleText.DrawText(titleFont);
                 inputText.DrawText(scoreFont);
                 hsScoreText.DrawText(scoreFont);
+                player.characterSprite.Draw(Core.SpriteBatch, player.position);
             }
             else
             {
@@ -166,90 +196,208 @@ namespace Endless_Runner.Code.Scenes
                 scoreText.DrawText(scoreFont);
                 healthText.DrawText(scoreFont);
                 gameOverText.DrawText(scoreFont);
-                player.offerText.DrawText(scoreFont);
                 obstacleManager.DrawLoop();
+                player.playerDrawCalls();
+                if (obstacleManager.offering)
+                {
+                    player.waxTablet.Draw(Core.SpriteBatch, player.waxTablet.position);
+                    player.offerText.DrawText(scoreFont);
+                }
             }
-            player.characterSprite.Draw(Core.SpriteBatch, player.position);
         }
 
 
         private void CheckKeyboardInput()
         {
-            switch (player.currentOffer)
+            if (Core.Input.GamePads[0].IsConnected)
             {
-                case "None":
-                    break;
-                case "Speed-Up":
-                    if (Core.Input.Keyboard.WasKeyJustPressed(Keys.P) && !player.speedUpActivated)
-                    {
-                        obstacleManager.speed += 6;
-                        scoreIncrement = 2;
-                        player.speedUpActivated = true;
-                    }
-                    else if (Core.Input.Keyboard.WasKeyJustPressed(Keys.P) && player.speedUpActivated)
-                    {
-                        obstacleManager.speed -= 6;
-                        scoreIncrement = 1;
-                        player.speedUpActivated = false;
-                    }
+                switch (player.currentOffer)
+                {
+                    case "None":
                         break;
-                case "Freemove":
-                    if (Core.Input.Keyboard.WasKeyJustPressed(Keys.P) && !player.FreeMoveActivated)
+                    case "Speed-Up":
+                        if (Core.Input.GamePads[0].WasButtonJustPressed(Buttons.B) && !player.speedUpActivated)
+                        {
+                            obstacleManager.speed += 6;
+                            scoreIncrement = 2;
+                            player.speedUpActivated = true;
+                        }
+                        else if (Core.Input.GamePads[0].WasButtonJustPressed(Buttons.B) && player.speedUpActivated)
+                        {
+                            obstacleManager.speed -= 6;
+                            scoreIncrement = 1;
+                            player.speedUpActivated = false;
+                        }
+                        break;
+                    case "Freemove":
+                        if (Core.Input.GamePads[0].WasButtonJustPressed(Buttons.B) && !player.FreeMoveActivated)
+                        {
+                            player.FreeMoveActivated = true;
+                        }
+                        else if (Core.Input.GamePads[0].WasButtonJustPressed(Buttons.B) && player.FreeMoveActivated)
+                        {
+                            player.FreeMoveActivated = false;
+                        }
+                        break;
+                    case "Health Charge":
+                        if (Core.Input.GamePads[0].WasButtonJustPressed(Buttons.B) && !player.HealthChargeActivated)
+                        {
+                            player.HealthChargeActivated = true;
+                        }
+                        break;
+                }
+                if (Core.Input.GamePads[0].WasButtonJustPressed(Buttons.A) && !transition && titleScreen)
+                {
+                    transition = true;
+                }
+                if (bufferOffering <= 0 && obstacleManager.offering)
+                {
+                    if (Core.Input.GamePads[0].WasButtonJustPressed(Buttons.A))
                     {
-                        player.FreeMoveActivated = true;
+                        switch (player.currentOffer)
+                        {
+                            case "Resurrection":
+                                player.hasResurrection = false;
+                                break;
+                            case "Speed-Up":
+                                player.hasSpeedUp = false;
+                                break;
+                            case "Freemove":
+                                player.hasFreeMove = false;
+                                break;
+                            case "Health Charge":
+                                player.hasHealthCharge = false;
+                                break;
+                        }
+                        player.SetOffer();
+                        obstacleManager.offering = false;
+                        bufferOffering = 1.5f;
+                        gamePaused = false;
                     }
-                    else if (Core.Input.Keyboard.WasKeyJustPressed(Keys.P) && player.FreeMoveActivated)
+                    if (Core.Input.GamePads[0].WasButtonJustPressed(Buttons.B))
                     {
-                        player.FreeMoveActivated = false;
+                        obstacleManager.offering = false;
+                        bufferOffering = 1.5f;
+                        gamePaused = false;
+                        player.offerText.Position = new Vector2(2000, 2000);
                     }
-                    break;
-            }
-            if (Core.Input.Keyboard.WasKeyJustPressed(Keys.Enter) && !transition && titleScreen)
-            {
-                transition = true;
-            }
-            if (Core.Input.Keyboard.IsKeyDown(Keys.F12))
-            {
-                int i = 0;
-                i++;
-            }
-            if (bufferOffering <= 0 && obstacleManager.offering)
-            {
-                if (Core.Input.Keyboard.IsKeyDown(Keys.P))
-                {
-                    player.SetOffer();
-                    obstacleManager.offering = false;
-                    bufferOffering = 1.5f;
-                    gamePaused = false;
-                    player.offerText.Position = new Vector2(2000, 2000);
                 }
-                if (Core.Input.Keyboard.IsKeyDown(Keys.Space))
+                else if (bufferOffering > 0 && obstacleManager.offering)
                 {
-                    obstacleManager.offering = false;
-                    bufferOffering = 1.5f;
-                    gamePaused = false;
-                    player.offerText.Position = new Vector2(2000, 2000);
+                    bufferOffering -= Core.Deltatime;
+                }
+                if (player.dead)
+                {
+                    if (Core.Input.GamePads[0].WasButtonJustPressed(Buttons.A))
+                    {
+                        Core.ChangeScene(new Runner());
+                    }
+                }
+                if (Core.Input.GamePads[0].WasButtonJustPressed(Buttons.Back))
+                {
+                    Core.ExitGame = true;
                 }
             }
-            else if (bufferOffering > 0 && obstacleManager.offering)
+            else
             {
-                bufferOffering -= Core.Deltatime;
-            }
-            if (player.dead)
-            {
-                if (Core.Input.Keyboard.WasKeyJustPressed(Keys.Enter))
+                switch (player.currentOffer)
                 {
-                    Core.ChangeScene(new Runner());
+                    case "None":
+                        break;
+                    case "Speed-Up":
+                        if (Core.Input.Keyboard.WasKeyJustPressed(Keys.P) && !player.speedUpActivated)
+                        {
+                            obstacleManager.speed += 6;
+                            scoreIncrement = 2;
+                            player.speedUpActivated = true;
+                        }
+                        else if (Core.Input.Keyboard.WasKeyJustPressed(Keys.P) && player.speedUpActivated)
+                        {
+                            obstacleManager.speed -= 6;
+                            scoreIncrement = 1;
+                            player.speedUpActivated = false;
+                        }
+                        break;
+                    case "Freemove":
+                        if (Core.Input.Keyboard.WasKeyJustPressed(Keys.P) && !player.FreeMoveActivated)
+                        {
+                            player.FreeMoveActivated = true;
+                        }
+                        else if (Core.Input.Keyboard.WasKeyJustPressed(Keys.P) && player.FreeMoveActivated)
+                        {
+                            player.FreeMoveActivated = false;
+                        }
+                        break;
+                    case "Health Charge":
+                        if (Core.Input.Keyboard.WasKeyJustPressed(Keys.P) && !player.HealthChargeActivated)
+                        {
+                            player.HealthChargeActivated = true;
+                        }
+                        break;
                 }
+                if (Core.Input.Keyboard.WasKeyJustPressed(Keys.Space) && !transition && titleScreen)
+                {
+                    transition = true;
+                }
+                if (bufferOffering <= 0 && obstacleManager.offering)
+                {
+                    if (Core.Input.Keyboard.IsKeyDown(Keys.Space))
+                    {
+                        switch (player.currentOffer)
+                        {
+                            case "Resurrection":
+                                player.hasResurrection = false;
+                                break;
+                            case "Speed-Up":
+                                player.hasSpeedUp = false;
+                                break;
+                            case "Freemove":
+                                player.hasFreeMove = false;
+                                break;
+                            case "Health Charge":
+                                player.hasHealthCharge = false;
+                                break;
+                        }
+                        player.SetOffer();
+                        obstacleManager.offering = false;
+                        bufferOffering = 1.5f;
+                        gamePaused = false;
+                    }
+                    if (Core.Input.Keyboard.IsKeyDown(Keys.P))
+                    {
+                        obstacleManager.offering = false;
+                        bufferOffering = 1.5f;
+                        gamePaused = false;
+                        player.offerText.Position = new Vector2(2000, 2000);
+                    }
+                }
+                else if (bufferOffering > 0 && obstacleManager.offering)
+                {
+                    bufferOffering -= Core.Deltatime;
+                }
+                if (player.dead)
+                {
+                    if (Core.Input.Keyboard.WasKeyJustPressed(Keys.Space))
+                    {
+                        Core.ChangeScene(new Runner());
+                    }
+                }
+                if (Core.Input.Keyboard.IsKeyDown(Keys.F12))
+                {
+                    int i = 0;
+                    i++;
+                }
+                if (Core.Input.Keyboard.IsKeyDown(Keys.Escape))
+                {
+                    Core.ExitGame = true;
+                }
+
             }
-            if (Core.Input.Keyboard.IsKeyDown(Keys.Escape))
-            {
-                Core.ExitGame = true;
-            }
+
         }
         void initializeTitle()
         {
-            titleFont = Core.Content.Load<SpriteFont>("Font/Title");
+            titleFont = Core.Content.Load<SpriteFont>(Path.Combine("Font", "Title"));
             titleTextPosition = new Vector2(5, 0);
             titleText = new SpriteFontText(TITLE_STRING, titleTextPosition,Vector2.Zero);
             titleText.Color = Color.Black;
@@ -278,9 +426,9 @@ namespace Endless_Runner.Code.Scenes
             obstacleManager.instatiateObstacle(new Obstacle(_obatlas, new Vector2(1960, ground.Top - 128), new Vector2(128, 128), "Rock"));
             obstacleManager.instatiateObstacle(new Obstacle(_obatlas, new Vector2(1960, ground.Top - 128), new Vector2(128, 128), "Rock"));
             //Initialize the player
-            player = new Player(TextureAtlas.FromFile(Core.Content, "RunnerXML.xml"), new Vector2(10, 1080-512), new Vector2(256, 512), new Vector2(256 / 2, 7), "Run", animations);
+            player = new Player(TextureAtlas.FromFile(Core.Content, "RunnerXML.xml"), TextureAtlas.FromFile(Core.Content, "Soul.xml"), new Vector2(10, 1080-512), new Vector2(256, 512), new Vector2(256 / 2, 7), "Run", animations);
             //Initialize the text
-            scoreFont = Core.Content.Load<SpriteFont>("Font/Gameplay");
+            scoreFont = Core.Content.Load<SpriteFont>(Path.Combine("Font", "Gameplay"));
             hsScoreText = new SpriteFontText(SCORE_STRING, scoreTextPosition, Color.Black);
             highScore = SaveManager.instance.sd.highScore;
             hsScoreText.format(HSSCOREKM_FORMAT, highScore);
@@ -289,7 +437,6 @@ namespace Endless_Runner.Code.Scenes
             gameOverText = new SpriteFontText("Game Over\nPress Enter to Restart", new Vector2(1920 * 2, 1080 * 2), Color.Black);
             player.offerText = new SpriteFontText("Press Jump to accept the offer\n", new Vector2(1920 * 2, 1080 * 2), Color.Black);
         }
-
         void gameTransiton()
         {
             transparency-=5;

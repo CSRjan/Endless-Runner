@@ -12,7 +12,6 @@ namespace Endless_Runner.Code
         public Sprite characterSprite;
         public Rectangle collider;
         public Vector2 velocity = Vector2.Zero;
-        float terminalVelocity = 25;
         public bool resetting;
         public int startPoint = 2000;
         public int endBound = -500;
@@ -41,27 +40,10 @@ namespace Endless_Runner.Code
                 else
                 {
                     position.X += velocity.X;
-                    velocity.X = clamp(velocity.X, -terminalVelocity, 0);
                     position.Y -= velocity.Y;
                     collider.X = (int)position.X;
                     collider.Y = (int)position.Y;
                 }
-            }
-        }
-
-        float clamp(float input, float min, float max)
-        {
-            if (input < min)
-            {
-                return min;
-            }
-            else if (input > max)
-            {
-                return max;
-            }
-            else
-            {
-                return input;
             }
         }
 

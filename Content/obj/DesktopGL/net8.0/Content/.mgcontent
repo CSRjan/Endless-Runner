@@ -6,15 +6,21 @@
   <SourceFiles>
     <File>C:/Users/Ryan/Desktop/Project Files/Endless Runner/Content/Art Assets/BackgroundPlants.png</File>
     <File>C:/Users/Ryan/Desktop/Project Files/Endless Runner/Content/Art Assets/BG.png</File>
+    <File>C:/Users/Ryan/Desktop/Project Files/Endless Runner/Content/Art Assets/Clouds.png</File>
     <File>C:/Users/Ryan/Desktop/Project Files/Endless Runner/Content/Art Assets/Rock.png</File>
     <File>C:/Users/Ryan/Desktop/Project Files/Endless Runner/Content/Art Assets/Runner.png</File>
     <File>C:/Users/Ryan/Desktop/Project Files/Endless Runner/Content/Art Assets/SandDunes.png</File>
+    <File>C:/Users/Ryan/Desktop/Project Files/Endless Runner/Content/Art Assets/Soul.png</File>
     <File>C:/Users/Ryan/Desktop/Project Files/Endless Runner/Content/Art Assets/TestImage.png</File>
+    <File>C:/Users/Ryan/Desktop/Project Files/Endless Runner/Content/Art Assets/Wax Tablet.png</File>
     <File>C:/Users/Ryan/Desktop/Project Files/Endless Runner/Content/Font/Gameplay.spritefont</File>
     <File>C:/Users/Ryan/Desktop/Project Files/Endless Runner/Content/Font/Title.spritefont</File>
     <File>C:/Users/Ryan/Desktop/Project Files/Endless Runner/Content/Sound Effect/parry_ShR1zj4.mp3</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

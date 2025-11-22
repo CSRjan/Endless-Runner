@@ -46,3 +46,6 @@ C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Release\net8.0\Endless Ru
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Release\net8.0\Endless Runner.genruntimeconfig.cache
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Release\net8.0\ref\Endless Runner.dll
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\Content\Art Assets\WoundSpriteSheet.xnb
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\Content\Art Assets\Wax Tablet.xnb
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\Content\Art Assets\Soul.xnb
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\Content\Art Assets\Clouds.xnb

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TextureAtlas>
+	<Texture>Art Assets/Soul</Texture>
+	<Regions>
+		<Region name="S1SoulF1" x="0" y="48" width="64" height="16" />
+		<Region name="S1SoulF2" x="64" y="48" width="64" height="16" />
+		<Region name="S1SoulF3" x="0" y="112" width="64" height="16" />
+		<Region name="S1SoulF4" x="64" y="112" width="64" height="16" />
+		<Region name="S2SoulF1" x="0" y="32" width="64" height="32" />
+		<Region name="S2SoulF2" x="64" y="32" width="64" height="32" />
+		<Region name="S2SoulF3" x="0" y="96" width="64" height="32" />
+		<Region name="S2SoulF4" x="64" y="96" width="64" height="32" />
+		<Region name="S3SoulF1" x="0" y="16" width="64" height="48" />
+		<Region name="S3SoulF2" x="64" y="16" width="64" height="48" />
+		<Region name="S3SoulF3" x="0" y="80" width="64" height="48" />
+		<Region name="S3SoulF4" x="64" y="80" width="64" height="48" />
+		<Region name="S4SoulF1" x="0" y="0" width="64" height="64" />
+		<Region name="S4SoulF2" x="64" y="0" width="64" height="64" />
+		<Region name="S4SoulF3" x="0" y="64" width="64" height="64" />
+		<Region name="S4SoulF4" x="64" y="64" width="64" height="64" />
+	</Regions>
+	<Animations>
+		<Animation name="Flame1/4" delay="33.33" looping ="true">
+			<Frame region ="S1SoulF1" frames = "3"/>
+			<Frame region ="S1SoulF2" frames = "3"/>
+			<Frame region ="S1SoulF3" frames = "3"/>
+			<Frame region ="S1SoulF4" frames = "3"/>
+		</Animation>
+		<Animation name="Flame2/4" delay="33.33" looping ="true">
+			<Frame region ="S2SoulF1" frames = "3"/>
+			<Frame region ="S2SoulF2" frames = "3"/>
+			<Frame region ="S2SoulF3" frames = "3"/>
+			<Frame region ="S2SoulF4" frames = "3"/>
+		</Animation>
+		<Animation name="Flame3/4" delay="33.33" looping ="true">
+			<Frame region ="S3SoulF1" frames = "3"/>
+			<Frame region ="S3SoulF2" frames = "3"/>
+			<Frame region ="S3SoulF3" frames = "3"/>
+			<Frame region ="S3SoulF4" frames = "3"/>
+		</Animation>
+		<Animation name="FlameDone" delay="33.33" looping ="true">
+			<Frame region ="S4SoulF1" frames = "3"/>
+			<Frame region ="S4SoulF2" frames = "3"/>
+			<Frame region ="S4SoulF3" frames = "3"/>
+			<Frame region ="S4SoulF4" frames = "3"/>
+		</Animation>
+	</Animations>
+</TextureAtlas>
+

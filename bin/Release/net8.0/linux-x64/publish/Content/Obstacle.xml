@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TextureAtlas>
+	<Texture>Art Assets/Rock</Texture>
+	<Regions>
+		<Region name="Rock" x="0" y="0" width="128" height="128" />
+		<Region name="WideRock" x="128" y="0" width="384" height="128" />
+	</Regions>
+	<Animations>
+	</Animations>
+</TextureAtlas>

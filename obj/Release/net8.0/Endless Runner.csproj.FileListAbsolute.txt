@@ -9,11 +9,6 @@ C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\Content\Fo
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\Content\Sound Effect\Parry.ogg
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\Content\Sound Effect\Parry.xnb
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\Content\Title.xnb
-C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\Endless Runner.exe
-C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\Endless Runner.deps.json
-C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\Endless Runner.runtimeconfig.json
-C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\Endless Runner.dll
-C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\Endless Runner.pdb
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\MonoGame.Framework.dll
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\NVorbis.dll
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\runtimes\android-arm\native\libopenal.so
@@ -40,12 +35,17 @@ C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Release\net8.0\Endless Ru
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Release\net8.0\Endless Runner.csproj.CoreCompileInputs.cache
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Release\net8.0\Endless Runner.sourcelink.json
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Release\net8.0\Endless .7262B102.Up2Date
-C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Release\net8.0\Endless Runner.dll
-C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Release\net8.0\refint\Endless Runner.dll
-C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Release\net8.0\Endless Runner.pdb
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Release\net8.0\Endless Runner.genruntimeconfig.cache
-C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Release\net8.0\ref\Endless Runner.dll
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\Content\Art Assets\WoundSpriteSheet.xnb
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\Content\Art Assets\Wax Tablet.xnb
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\Content\Art Assets\Soul.xnb
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\Content\Art Assets\Clouds.xnb
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\Endless Dolichos.exe
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\Endless Dolichos.deps.json
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\Endless Dolichos.runtimeconfig.json
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\Endless Dolichos.dll
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\Endless Dolichos.pdb
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Release\net8.0\Endless Dolichos.dll
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Release\net8.0\refint\Endless Dolichos.dll
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Release\net8.0\Endless Dolichos.pdb
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Release\net8.0\ref\Endless Dolichos.dll

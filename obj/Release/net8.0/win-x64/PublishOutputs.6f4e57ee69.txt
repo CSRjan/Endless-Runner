@@ -1,9 +1,11 @@
-C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\publish\Endless Runner.exe
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\publish\Endless Dolichos.exe
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\publish\Content/Art Assets\BackgroundPlants.xnb
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\publish\Content/Art Assets\BG.xnb
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\publish\Content/Art Assets\Clouds.xnb
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\publish\Content/Art Assets\Rock.xnb
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\publish\Content/Art Assets\Runner.xnb
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\publish\Content/Art Assets\SandDunes.xnb
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\publish\Content/Art Assets\Soul.xnb
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\publish\Content/Art Assets\TestImage.xnb
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\publish\Content/Art Assets\Wax Tablet.xnb
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\publish\Content/Art Assets\WoundSpriteSheet.xnb
@@ -12,10 +14,10 @@ C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\pu
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\publish\Content/Sound Effect\Parry.ogg
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\publish\Content/Sound Effect\Parry.xnb
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\publish\Content/Title.xnb
-C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\publish\Endless Runner.dll
-C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\publish\Endless Runner.deps.json
-C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\publish\Endless Runner.runtimeconfig.json
-C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\publish\Endless Runner.pdb
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\publish\Endless Dolichos.dll
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\publish\Endless Dolichos.deps.json
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\publish\Endless Dolichos.runtimeconfig.json
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\publish\Endless Dolichos.pdb
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\publish\Microsoft.CSharp.dll
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\publish\Microsoft.VisualBasic.Core.dll
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\publish\Microsoft.VisualBasic.dll

@@ -30,7 +30,7 @@ namespace Endless_Runner.Code.Scenes
         string SCORE_FORMAT = "Score: {0}";
         string HEALTH_FORMAT = "Health: {0}";
         int score = 1;
-        int scoreIncrement = 1;
+        int scoreIncrement = 0;
         int exScore;
         int highScore;
         int finalScore;
@@ -84,28 +84,10 @@ namespace Endless_Runner.Code.Scenes
                 if (Core.Input.GamePads[0].IsConnected)
                 {
                     inputText.textValue = "Press A to Start.";
-                    if (obstacleManager.offering)
-                    {
-                        player.description += "\nPress A to accept The Blessing\nPress B to Deny The Blessing";
-                    }
-                    if (SaveManager.instance.sd.offeringForFirstTime)
-                    {
-                        player.description += "\nIf you accept, your powers with the exception of resurrection, are activated with B.";
-                        SaveManager.instance.sd.offeringForFirstTime = false;
-                    }
                 }
                 else
                 {
-                    inputText.textValue = "Press Space to Start.";
-                    if (obstacleManager.offering)
-                    {
-                        player.description += "Press Space to accept The Blessing\nPress P to Deny The Blessing";
-                    }
-                    if (SaveManager.instance.sd.offeringForFirstTime)
-                    {
-                        player.description += "\nIf you accept, your powers with the exception of resurrection, are activated with P.";
-                        SaveManager.instance.sd.offeringForFirstTime = false;
-                    }
+                    inputText.textValue = "Press Space to Start";
                 }
             }
             else
@@ -154,20 +136,23 @@ namespace Endless_Runner.Code.Scenes
                                 hsScoreText.format(HSSCOREKM_FORMAT, highScore);
                             }
                         }
-                        switch(player.position.X)
+                        if (player.FreeMoveActivated)
                         {
-                            case < 352:
-                                scoreIncrement = 0;
-                                break;
-                            case < 704:
-                                scoreIncrement = 2;
-                                break;
-                            case < 1056:
-                                scoreIncrement = 4;
-                                break;
-                            case < 1408:
-                                scoreIncrement = 6;
-                                break;
+                            switch (player.position.X)
+                            {
+                                case < 352:
+                                    scoreIncrement = 0;
+                                    break;
+                                case < 704:
+                                    scoreIncrement = 2;
+                                    break;
+                                case < 1056:
+                                    scoreIncrement = 4;
+                                    break;
+                                case < 1408:
+                                    scoreIncrement = 6;
+                                    break;
+                            }
                         }
                         player.Update();
                         player.characterSprite.Update(gameTime);
@@ -349,12 +334,15 @@ namespace Endless_Runner.Code.Scenes
                                 player.hasResurrection = false;
                                 break;
                             case "Speed-Up":
+                                scoreIncrement = 0;
                                 player.hasSpeedUp = false;
                                 break;
                             case "Freemove":
+                                scoreIncrement = 0;
                                 player.hasFreeMove = false;
                                 break;
                             case "Health Charge":
+                                player.chargeAmountLeft = 200;
                                 player.hasHealthCharge = false;
                                 break;
                         }

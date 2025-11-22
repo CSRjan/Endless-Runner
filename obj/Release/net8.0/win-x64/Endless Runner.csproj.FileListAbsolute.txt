@@ -9,11 +9,6 @@ C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\Co
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\Content\Sound Effect\Parry.ogg
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\Content\Sound Effect\Parry.xnb
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\Content\Title.xnb
-C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\Endless Runner.exe
-C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\Endless Runner.deps.json
-C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\Endless Runner.runtimeconfig.json
-C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\Endless Runner.dll
-C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\Endless Runner.pdb
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\MonoGame.Framework.dll
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\NVorbis.dll
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\openal.dll
@@ -28,11 +23,7 @@ C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Release\net8.0\win-x64\En
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Release\net8.0\win-x64\Endless Runner.csproj.CoreCompileInputs.cache
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Release\net8.0\win-x64\Endless Runner.sourcelink.json
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Release\net8.0\win-x64\Endless .7262B102.Up2Date
-C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Release\net8.0\win-x64\Endless Runner.dll
-C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Release\net8.0\win-x64\refint\Endless Runner.dll
-C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Release\net8.0\win-x64\Endless Runner.pdb
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Release\net8.0\win-x64\Endless Runner.genruntimeconfig.cache
-C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Release\net8.0\win-x64\ref\Endless Runner.dll
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\Content\Art Assets\Wax Tablet.xnb
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\Content\Art Assets\WoundSpriteSheet.xnb
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\Microsoft.CSharp.dll
@@ -217,3 +208,14 @@ C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\ms
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\mscordbi.dll
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\mscorrc.dll
 C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\msquic.dll
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\Content\Art Assets\Clouds.xnb
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\Content\Art Assets\Soul.xnb
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\Endless Dolichos.exe
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\Endless Dolichos.deps.json
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\Endless Dolichos.runtimeconfig.json
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\Endless Dolichos.dll
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\bin\Release\net8.0\win-x64\Endless Dolichos.pdb
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Release\net8.0\win-x64\Endless Dolichos.dll
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Release\net8.0\win-x64\refint\Endless Dolichos.dll
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Release\net8.0\win-x64\Endless Dolichos.pdb
+C:\Users\Ryan\Desktop\Project Files\Endless Runner\obj\Release\net8.0\win-x64\ref\Endless Dolichos.dll

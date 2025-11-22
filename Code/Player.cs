@@ -45,7 +45,7 @@ namespace Endless_Runner.Code
         public float horiSpeed = 3;
         public Sprite waxTablet;
         public SpriteFontText offerText;
-        public string currentOffer = "Resurrection";
+        public string currentOffer = "Health Charge";
         string newOffer;
         public string description;
         float jumpBufferTimer = .50f;
@@ -292,7 +292,7 @@ namespace Endless_Runner.Code
             characterSprite.Draw(Core.SpriteBatch, position);
             if (HealthChargeActivated)
             {
-                soulSprite.Draw(Core.SpriteBatch, position - new Vector2(0,soulSprite.Height));
+                soulSprite.Draw(Core.SpriteBatch, position - new Vector2(-325,soulSprite.Height ));
             }
         }
         public void instantiateOffering()
@@ -353,12 +353,30 @@ namespace Endless_Runner.Code
                         else
                         {
                             newOffer = "Health Charge";
-                            description = "When activated, you will be charge your spirit until your until your spirit burns bright.\n Make the distance without being hit for an extra health, or else lose all your extra health.";
+                            description = "When activated, you will be charge your spirit bright, make the distance \n without being hit for an extra health, or else reset to 2.";
                         }
                     }
                     break;
             }
-            offerText.formatting("New Offer: {0}\nInfo: {1}", newOffer, description);
+            if (Core.Input.GamePads[0].IsConnected)
+            {
+                if (SaveManager.instance.sd.offeringForFirstTime)
+                {
+                    description += "\n\nPlease Note: If you want to accept, your powers with the exception of resurrection, \nare activated with B.\n\n";
+                    SaveManager.instance.sd.offeringForFirstTime = false;
+                }
+                description += "\nPress A to accept The Blessing\nPress B to Deny The Blessing";
+            }
+            else
+            {
+                if (SaveManager.instance.sd.offeringForFirstTime)
+                {
+                    description += "\n\nPlease Note: If you accept, your powers with the exception of resurrection, are activated with P.\n\n";
+                    SaveManager.instance.sd.offeringForFirstTime = false;
+                }
+                description += "\nPress Space to accept The Blessing\nPress P to Deny The Blessing";
+            }
+                offerText.formatting("New Offer: {0}\nInfo: {1}", newOffer, description);
         }
 
         public void SetOffer()
